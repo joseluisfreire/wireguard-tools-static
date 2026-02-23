@@ -1,0 +1,27 @@
+wireguard-tools-static
+======================
+
+This repository distributes statically compiled binaries of wireguard-tools
+(wg, wg-quick) for use on systems where dynamic linking is not available
+or practical — such as MK-AUTH on Debian.
+
+Original Project
+----------------
+  Name:       wireguard-tools
+  Author:     Jason A. Donenfeld <Jason@zx2c4.com>
+  Website:    https://www.wireguard.com
+  Source:     https://git.zx2c4.com/wireguard-tools/
+  Mirror:     https://github.com/WireGuard/wireguard-tools
+  License:    GPL-2.0 (see LICENSE)
+
+What was changed
+----------------
+  - No source code modifications were made.
+  - The binaries were compiled with static linking (musl libc)
+    to run on MK-AUTH (Debian 12 amd64) without external dependencies.
+
+Build instructions
+------------------
+  See BUILD.md (or the project README) for full compilation steps.
+
+"WireGuard" is a registered trademark of Jason A. Donenfeld.
